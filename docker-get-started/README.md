@@ -10,7 +10,7 @@ These files are used in the official Docker [Get-Started Tutorial: part 3](https
 
 **Starting the app:**
 
-    Run start.sh or change to the same directory as the project files and enter the following commands.
+Run start.sh or change to the same directory as the project files and enter the following commands.
 
 * Initialize swarm
   ```
@@ -24,7 +24,7 @@ These files are used in the official Docker [Get-Started Tutorial: part 3](https
 
 **Stopping the app:**
 
-    Run stop.sh or change to the same directory as the project files and enter the following commands.
+Run stop.sh or change to the same directory as the project files and enter the following commands.
 
 * Take down the stack
   ```
