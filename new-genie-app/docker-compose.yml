@@ -1,0 +1,18 @@
+version: '3'
+services:
+  GenieApp:
+    image: genie-app
+    deploy:
+      replicas: 5
+      resources:
+        limits:
+          memory: 200M
+      restart_policy:
+        condition: on-failure
+    command: julia --color=yes --depwarn=no -i bootstrap.jl -l 0.0.0.0 -p 8000 s
+    ports:
+      - "8000:8000"
+    networks:
+      - GenieNet
+networks:
+  GenieNet:
